@@ -73,7 +73,7 @@ namespace AncientTools.BlockBehaviors
 
             ItemStack interactedStack = byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack;
 
-            if (interactedStack.Attributes == null || !interactedStack.Collectible.Attributes["strippingTimeModifier"].Exists)
+            if (interactedStack.Collectible.Attributes == null || !interactedStack.Collectible.Attributes["strippingTimeModifier"].Exists)
                 return false;
 
 

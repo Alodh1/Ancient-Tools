@@ -4,12 +4,21 @@
 	"attributes": {
 		clothescategory: "foot",
 		wearableAttachment: true,
-		"warmth": 1
+		"warmthByType": {
+			"*-buckskin": 1,
+			"*-furlined": 2
+		}
 	},
+	variantgroups: [
+		{ code: "type", states: ["buckskin", "furlined" ] },
+	],
     behaviors: [{ name: "GroundStorable", properties: { layout: 'Quadrants', collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.25, z2: 1 } } }],
 	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "ancienttools": ["*"] },
 	renderAlphaTest: 0.25,
-	shape: { base: "ancienttools:item/clothes/native/moccassins" },
+	shapeByType: {
+		"*-buckskin": { base: "ancienttools:item/clothes/native/moccassins" },
+		"*-furlined": { base: "ancienttools:item/clothes/native/moccassins_furlined" },
+	},
 	storageFlags: 128,
 	textures: {
 		"seraph": { base: "game:block/transparent" },

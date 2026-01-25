@@ -1,0 +1,29 @@
+﻿[
+    {
+		ingredientPattern: " K FFFBBB",
+		width: 3,
+		height: 3,
+		ingredients: {
+			"K": {
+				"type": "item",
+				"code": "game:knife-*",
+				"isTool": true
+			},
+			"F": {
+				type: "item",
+				code: "game:feather",
+				"quantity": 1
+			},
+			"B": { 
+				type: "item",
+				code: "ancienttools:buckskin",
+				"quantity": 2
+			}
+		},
+		output: { 
+			type: "item", 
+			code: "ancienttools:buckskinheadband",
+			quantity: 1
+		}
+	},
+]

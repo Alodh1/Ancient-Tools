@@ -1175,9 +1175,14 @@ This barrel functions identically to a typical barrel made from planks, but has 
 
 	"itemdesc-buckskin": "A very soft, pliable leather made from hide. This material is highly water resistant and can be made into comfortable clothing",
 
-	"item-moccassins": "Buckskin Moccasins",
+	"item-moccassins-buckskin": "Buckskin Moccasins",
+	"item-moccassins-furlined": "Fur-lined Buckskin Moccassins",
 	"item-breechcloth": "Buckskin Breechcloth",
 	"item-warshirt": "Buckskin Warshirt",
+	"item-buckskingloves-buckskin": "Buckskin Gloves",
+	"item-buckskingloves-furlined": "Fur-lined Buckskin Gloves",
+	"item-coonskincap": "Coonskin Cap",
+	"item-buckskinheadband": "Feathered Buckskin Headband",
 
 	"entity-wood-aged-cart": "Aged Cart",
 	"entity-wood-birch-cart": "Birch Cart",

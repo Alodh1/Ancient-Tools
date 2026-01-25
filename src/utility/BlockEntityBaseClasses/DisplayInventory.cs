@@ -62,7 +62,8 @@ namespace AncientTools.Utility
 
                         //-- No texture file was found for the grindable shape, probably due to an incorrect file path in the object. The mortarProperties attribute, or otherwise --//
                         //-- Throwing an exception here so that the catch can be triggered, unknown texture can be displayed, and a crash won't happen further along in code --//
-                        throw new FileNotFoundException();
+                        if(texpos == null)
+                            throw new FileNotFoundException();
                     }
 
                     return texpos;

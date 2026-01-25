@@ -1,28 +1,24 @@
 ﻿[
     {
-		ingredientPattern: "T TB B",
+		ingredientPattern: "B B",
 		width: 3,
-		height: 2,
+		height: 1,
 		ingredients: {
 			"B": { 
 				type: "item",
 				code: "ancienttools:buckskin",
-				"quantity": 4
-			},
-			"T": {
-				type: "item",
-				code: "game:flaxtwine"
+				"quantity": 3
 			}
 
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-buckskin",
+			code: "ancienttools:buckskingloves-buckskin",
 			quantity: 1
 		}
 	},
 	{
-		ingredientPattern: " K TPTB B",
+		ingredientPattern: " K  P B B",
 		width: 3,
 		height: 3,
 		ingredients: {
@@ -36,24 +32,20 @@
 				code: "game:hide-pelt-small",
 				"quantity": 2
 			},
-			"T": {
-				type: "item",
-				code: "game:flaxtwine"
-			},
 			"B": { 
 				type: "item",
 				code: "ancienttools:buckskin",
-				"quantity": 4
+				"quantity": 3
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	},
 	{
-		ingredientPattern: " K TPTB B",
+		ingredientPattern: " K  P B B",
 		width: 3,
 		height: 3,
 		ingredients: {
@@ -67,24 +59,20 @@
 				code: "game:hide-pelt-medium",
 				"quantity": 2
 			},
-			"T": {
-				type: "item",
-				code: "game:flaxtwine"
-			},
 			"B": { 
 				type: "item",
 				code: "ancienttools:buckskin",
-				"quantity": 4
+				"quantity": 3
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	},
 	{
-		ingredientPattern: " K TPTB B",
+		ingredientPattern: " K  P B B",
 		width: 3,
 		height: 3,
 		ingredients: {
@@ -96,25 +84,22 @@
 			"P": {
 				type: "item",
 				code: "game:hide-pelt-large",
-			},
-			"T": {
-				type: "item",
-				code: "game:flaxtwine"
+				"quantity": 1
 			},
 			"B": { 
 				type: "item",
 				code: "ancienttools:buckskin",
-				"quantity": 4
+				"quantity": 3
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	},
 	{
-		ingredientPattern: " K TPTB B",
+		ingredientPattern: " K  P B B",
 		width: 3,
 		height: 3,
 		ingredients: {
@@ -126,20 +111,17 @@
 			"P": {
 				type: "item",
 				code: "game:hide-pelt-huge",
-			},
-			"T": {
-				type: "item",
-				code: "game:flaxtwine"
+				"quantity": 1
 			},
 			"B": { 
 				type: "item",
 				code: "ancienttools:buckskin",
-				"quantity": 4
+				"quantity": 3
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	},
@@ -160,13 +142,13 @@
 			},
 			"M": { 
 				type: "item",
-				code: "ancienttools:moccassins-buckskin",
+				code: "ancienttools:buckskingloves-buckskin",
 				"quantity": 1
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	},
@@ -187,13 +169,13 @@
 			},
 			"M": { 
 				type: "item",
-				code: "ancienttools:moccassins-buckskin",
+				code: "ancienttools:buckskingloves-buckskin",
 				"quantity": 1
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	},
@@ -213,13 +195,13 @@
 			},
 			"M": { 
 				type: "item",
-				code: "ancienttools:moccassins-buckskin",
+				code: "ancienttools:buckskingloves-buckskin",
 				"quantity": 1
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	},
@@ -239,13 +221,13 @@
 			},
 			"M": { 
 				type: "item",
-				code: "ancienttools:moccassins-buckskin",
+				code: "ancienttools:buckskingloves-buckskin",
 				"quantity": 1
 			}
 		},
 		output: { 
 			type: "item", 
-			code: "ancienttools:moccassins-furlined",
+			code: "ancienttools:buckskingloves-furlined",
 			quantity: 1
 		}
 	}

@@ -1,0 +1,27 @@
+﻿{
+    code: "buckskinheadband",
+	class: "ItemWearable",
+	"attributes": {
+		clothescategory: "head",
+		wearableAttachment: true,
+		"warmth": 1,
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "ancienttools": ["*"] },
+	renderAlphaTest: 0.25,
+	shape: { base: "ancienttools:item/clothes/native/buckskinheadband" },
+	storageFlags: 128,
+	textures: {
+		"seraph": { base: "game:block/transparent" },
+		"headband": { "base": "ancienttools:item/clothes/native/buckskinheadband"}
+	},
+	guiTransform: {
+		rotation: { x: -20, y: -133, z: 180 },
+		origin: { x: 0.5, y: 1.8, z: 0.5 },
+		scale: 2.15
+	},
+	tpHandTransform: {
+		rotation: { x: -17, y: 90, z: 89 },
+		origin: { x: 0.27, y: 1, z: 1.59 },
+		scale: 0.7
+	}
+}

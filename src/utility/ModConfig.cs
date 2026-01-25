@@ -58,6 +58,12 @@ namespace AncientTools.Utility
                 ATConfig = LoadConfig(api);
             }
 
+            if (ATConfig == null && api.ModLoader.IsModEnabled("autoconfiglib"))
+            {
+                api.Logger.Warning("AutoConfigLib does not play nicely with the Ancient Tools config system. An error was captured, but configuration should still function through the ConfigLib system.");
+                return;
+            }
+
             ReadConfig(api, ATConfig);
 
         }
