@@ -7,12 +7,4 @@
 		"side": "Server",
 		"condition": { "when": "DisableVanillaGlue", "isValue": "true" }
 	},
-	{
-		"op": "add",
-		"path": "/enabled",
-		"value": "false",
-		"file": "game:recipes/cooking/glue-reheat",
-		"side": "Server",
-		"condition": { "when": "DisableVanillaGlue", "isValue": "true" }
-	},
 ]

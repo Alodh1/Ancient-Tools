@@ -20,7 +20,7 @@ namespace AncientTools.CollectibleBehaviors
 
             Block interactedBlock = byEntity.Api.World.BlockAccessor.GetBlock(blockSel.Position, BlockLayersAccess.Fluid);
 
-            if (interactedBlock.BlockMaterial == EnumBlockMaterial.Liquid)
+            if (interactedBlock.IsLiquid())
             {
                 if (interactedBlock.Code.Domain == "game")
                 {

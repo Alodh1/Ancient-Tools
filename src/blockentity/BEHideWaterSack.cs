@@ -31,7 +31,11 @@ namespace AncientTools.BlockEntities
         public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
         {
             timeRemaining = tree.GetDouble("timeremaining");
-            previousHourChecked = tree.GetDouble("previoushourchecked", worldAccessForResolve.Calendar.TotalHours);
+            previousHourChecked = tree.GetDouble("previoushourchecked", worldAccessForResolve.Calendar.ElapsedHours);
+            if (previousHourChecked > worldAccessForResolve.Calendar.ElapsedHours)
+            {
+                previousHourChecked = worldAccessForResolve.Calendar.ElapsedHours;
+            }
 
             base.FromTreeAttributes(tree, worldAccessForResolve);
         }
@@ -45,8 +49,8 @@ namespace AncientTools.BlockEntities
             }
             else
             {
-                tree.SetDouble("previoushourchecked", Api.World.Calendar.TotalHours);
-                previousHourChecked = Api.World.Calendar.TotalHours;
+                tree.SetDouble("previoushourchecked", Api.World.Calendar.ElapsedHours);
+                previousHourChecked = Api.World.Calendar.ElapsedHours;
             }
 
             base.ToTreeAttributes(tree);
@@ -85,7 +89,7 @@ namespace AncientTools.BlockEntities
         }
         private void HourlyTicker(float deltaTime)
         {
-            thisHourChecked = coreAPI.World.Calendar.TotalHours;
+            thisHourChecked = coreAPI.World.Calendar.ElapsedHours;
 
             timeRemaining -= (thisHourChecked - previousHourChecked);
 

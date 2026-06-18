@@ -72,7 +72,11 @@ namespace AncientTools.BlockEntities
         {
             base.FromTreeAttributes(tree, worldForResolving);
 
-            previousHourChecked = tree.GetDouble("previoushourchecked", worldForResolving.Calendar.TotalHours);
+            previousHourChecked = tree.GetDouble("previoushourchecked", worldForResolving.Calendar.ElapsedHours);
+            if (previousHourChecked > worldForResolving.Calendar.ElapsedHours)
+            {
+                previousHourChecked = worldForResolving.Calendar.ElapsedHours;
+            }
 
             if (Api == null || Api.Side == EnumAppSide.Server)
                 return;
@@ -89,8 +93,8 @@ namespace AncientTools.BlockEntities
             }
             else
             {
-                tree.SetDouble("previoushourchecked", Api.World.Calendar.TotalHours);
-                previousHourChecked = Api.World.Calendar.TotalHours;
+                tree.SetDouble("previoushourchecked", Api.World.Calendar.ElapsedHours);
+                previousHourChecked = Api.World.Calendar.ElapsedHours;
             }
         }
         public override void OnBlockBroken(IPlayer player)
@@ -268,7 +272,7 @@ namespace AncientTools.BlockEntities
         }
         private void HourlyMeatCheck(float deltaTime)
         {
-            thisHourChecked = coreAPI.World.Calendar.TotalHours;
+            thisHourChecked = coreAPI.World.Calendar.ElapsedHours;
 
             for(int i = 1; i < 9; i++)
             {

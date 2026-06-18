@@ -6,7 +6,7 @@
 			"isSalveOil": true,
 			"langCode": "ancienttools:blockhelp-insert-oil"
 		},
-		"file": "game:itemtypes/resource/fat",
+		"file": "game:itemtypes/resource/fat-rendered",
 		"side": "Server",
 		"condition": { "when": "SalveEnabled", "isValue": "true" }
 	},
@@ -19,7 +19,7 @@
 				text: "ancienttools:handbook-salve-craftinfo-dot"
 			}],
 		},
-		"file": "game:itemtypes/resource/fat",
+		"file": "game:itemtypes/resource/fat-rendered",
 		"side": "Server",
 		"condition": { "when": "SalveEnabled", "isValue": "true" }
 	},
@@ -27,7 +27,7 @@
 		"op": "add",
 		"path": "/attributes/canSealPrimitiveBarrel",
 		"value": true,
-		"file": "game:itemtypes/resource/fat",
+		"file": "game:itemtypes/resource/fat-rendered",
 		"side": "Server",
 	},
 	{
@@ -42,7 +42,7 @@
 					"quantityNeeded": 1
 			} 
 		},
-		"file": "game:itemtypes/resource/fat",
+		"file": "game:itemtypes/resource/fat-rendered",
 		"side": "Server",
 		"condition": { "when": "SalveEnabled", "isValue": "true" }
 	},
@@ -58,7 +58,7 @@
 				"quantityNeeded": 1
 			}
 		},
-		"file": "game:itemtypes/resource/fat",
+		"file": "game:itemtypes/resource/fat-rendered",
 		"side": "Server",
 		"condition": { "when": "SalveEnabled", "isValue": "true" }
 	},
@@ -74,7 +74,7 @@
 				"quantityNeeded": 1
 			}
 		},
-		"file": "game:itemtypes/resource/fat",
+		"file": "game:itemtypes/resource/fat-rendered",
 		"side": "Server"
 	}
 ]

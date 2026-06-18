@@ -9,7 +9,7 @@
 	},
 	"textures": {
 		"smoked": "game:item/resource/hide/smoked",
-		"string": "game:item/tool/material/string"
+		"string": "game:item/resource/string"
 	},
 	"elements": [
 		{

@@ -19,6 +19,9 @@ namespace AncientTools.Utility
     abstract class EntityMobileStorage : EntityAgent
     {
         private const int ATTACHED_CHECK_IN_SECONDS = 15;
+        private const float CART_HITCH_HEIGHT = 0.1f;
+        private const float CART_MIN_PITCH = -0.35f;
+        private const float CART_MAX_PITCH = 0.3f;
         protected float DroppedHeight { get; set; } = -0.2f;
         protected bool IsDropped { get; set; } = false;
         public abstract int StorageBlocksCount { get; protected set; }
@@ -43,7 +46,7 @@ namespace AncientTools.Utility
         {
             base.Initialize(properties, api, InChunkIndex3d);
 
-            EntityTransform = this.SidedPos;
+            EntityTransform = this.Pos;
             Capi = api as ICoreClientAPI;
             Sapi = api as ICoreServerAPI;
 
@@ -165,8 +168,7 @@ namespace AncientTools.Utility
         }
         public void SyncPosition()
         {
-            ServerPos.SetFrom(EntityTransform);
-            Pos.SetFrom(ServerPos);
+            Pos.SetFrom(EntityTransform);
         }
         public void SetLookAtVector(Vec3f cartPos, float xPos, float yPos, float zPos)
         {
@@ -178,19 +180,23 @@ namespace AncientTools.Utility
         }
         public void SetLookAtVector(Vec3f cartPos, Vec3f attachedEntityPos, Vec3f attachedEntityEyePos)
         {
-            Vec3f normal = new Vec3f();
+            float dx = attachedEntityPos.X - cartPos.X;
+            float dz = attachedEntityPos.Z - cartPos.Z;
+            float horizontalSq = dx * dx + dz * dz;
+            float horizontalDistance = (float)Math.Sqrt(horizontalSq);
+            float verticalOffset = attachedEntityPos.Y + CART_HITCH_HEIGHT - cartPos.Y;
 
-            if(AttachedEntity.EntityId != Capi.World.Player.Entity.EntityId)
-                normal = ((attachedEntityPos + (attachedEntityEyePos / 16)) - (cartPos)).Normalize();
-            else
-                normal = ((attachedEntityPos + (attachedEntityEyePos / 4)) - (cartPos)).Normalize();
-            //normal.Y = 0.325f;
+            // The cart hitch should track a low hand-height point, not the player's camera/eye height.
+            float pitch = (float)Math.Atan2(verticalOffset, Math.Max(horizontalDistance, 0.001f));
 
-            double pitch = Math.Asin(normal.Y);
-            double yaw = Math.Atan2(-normal.X, -normal.Z);
+            LookAtVector.X = Clamp(pitch, CART_MIN_PITCH, CART_MAX_PITCH);
 
-            LookAtVector.X = (float)pitch;
-            LookAtVector.Y = (float)yaw;
+            if (horizontalSq > 0.0001f)
+                LookAtVector.Y = (float)Math.Atan2(-dx, -dz);
+        }
+        private static float Clamp(float value, float min, float max)
+        {
+            return Math.Max(min, Math.Min(max, value));
         }
         /// <summary>
         /// Sends the entity ID that the cart should attach to so that all can assign their AttachedEntity for accurate visual rotation. 

@@ -5,7 +5,11 @@
 		ingredients: {
 			"W": { 
 				type: "block", 
-				code: "game:woodbucket"
+				code: "game:woodbucket",
+				recipeAttributes: {
+					requiresContent: { type: "item", code: "game:waterportion" },
+					requiresLitres: 1
+				}
 			},
 			"F": { 
 				type: "item", 
@@ -16,12 +20,6 @@
 		},
 		width: 2,
 		height: 1,
-		attributes: {
-			liquidContainerProps: {
-				requiresContent: { type: "item", code: "game:waterportion" },
-				requiresLitres: 1
-			}
-		},
 		name: "dough",
 		shapeless: true,
 		output: { type: "item", code: "ancienttools:barkdough-{type}"  }
@@ -32,7 +30,11 @@
 		ingredients: {
 			"W": { 
 				type: "block", 
-				code: "game:bowl-*-fired"
+				code: "game:bowl-*-fired",
+				recipeAttributes: {
+					requiresContent: { type: "item", code: "game:waterportion" },
+					requiresLitres: 1
+				}
 			},
 			"F": { 
 				type: "item", 
@@ -43,12 +45,6 @@
 		},
 		width: 2,
 		height: 1,
-		attributes: {
-			liquidContainerProps: {
-				requiresContent: { type: "item", code: "game:waterportion" },
-				requiresLitres: 1
-			}
-		},
 		name: "dough",
 		shapeless: true,
 		output: { type: "item", code: "ancienttools:barkdough-{type}"  }
@@ -59,7 +55,11 @@
 		ingredients: {
 			"W": { 
 				type: "block", 
-				code: "game:jug-*-fired"
+				code: "game:jug-*-fired",
+				recipeAttributes: {
+					requiresContent: { type: "item", code: "game:waterportion" },
+					requiresLitres: 1
+				}
 
 			},
 			"F": { 
@@ -71,12 +71,6 @@
 		},
 		width: 2,
 		height: 1,
-		attributes: {
-			liquidContainerProps: {
-				requiresContent: { type: "item", code: "game:waterportion" },
-				requiresLitres: 1
-			}
-		},
 		name: "dough",
 		shapeless: true,
 		output: { type: "item", code: "ancienttools:barkdough-{type}"  }

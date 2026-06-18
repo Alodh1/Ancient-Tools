@@ -27,7 +27,7 @@
 				rotateAround: { x: 0, y: 1, z: 0 }
 			}
 		},
-		"file": "expandedfoods:itemtypes/food/primitivesurvival/mixing/sausagefish",
+		"file": "expandedfoods:itemtypes/food/mixing/sausagefish",
 		"dependsOn": [{ "modid": "expandedfoods" }, { "modid": "primitivesurvival" }],
 		"side": "Server"
 	},

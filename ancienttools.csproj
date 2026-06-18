@@ -1,53 +1,58 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <OutputType>Library</OutputType>
+    <AssemblyName>ancienttools</AssemblyName>
+    <ModId>ancienttoolsfork</ModId>
+    <ModVersion>1.6.4</ModVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GameDirectory Condition="'$(GameDirectory)' == '' and '$(VINTAGE_STORY)' != ''">$(VINTAGE_STORY)</GameDirectory>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">$(AppData)\Vintagestory</GameDirectory>
+    <ReleasesDir>$(MSBuildProjectDirectory)\Releases</ReleasesDir>
+    <ReleaseFile>$(ModId)_$(ModVersion)</ReleaseFile>
+    <ReleasePath>$(ReleasesDir)\$(ReleaseFile).zip</ReleasePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>$(ProjectDir)\Projects\VintageStory\Mods\Debug\ancienttools</OutputPath>
-    <IntermediateOutputPath>..\..\obj\Debug\ancienttools\</IntermediateOutputPath>
+    <OutputPath>bin\Debug\Mods\$(ModId)\</OutputPath>
+    <IntermediateOutputPath>obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>$(ProjectDir)\Projects\VintageStory\Debug\ancienttools</OutputPath>
-    <IntermediateOutputPath>..\..\obj\Release\ancienttools\</IntermediateOutputPath>
+    <OutputPath>bin\Release\Mods\$(ModId)\</OutputPath>
+    <IntermediateOutputPath>obj\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="protobuf-net">
-      <HintPath>$(VINTAGE_STORY)\Lib\protobuf-net.dll</HintPath>
+      <HintPath>$(GameDirectory)\Lib\protobuf-net.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="VintagestoryAPI">
-      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <HintPath>$(GameDirectory)\VintagestoryAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VSSurvivalMod">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+      <HintPath>$(GameDirectory)\Mods\VSSurvivalMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VSEssentials">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+      <HintPath>$(GameDirectory)\Mods\VSEssentials.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VSCreativeMod">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+      <HintPath>$(GameDirectory)\Mods\VSCreativeMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+      <HintPath>$(GameDirectory)\Lib\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="0Harmony">
-      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+      <HintPath>$(GameDirectory)\Lib\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="assets\**">
+    <Content Include="assets\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Remove="assets\ancienttools\sounds\item\popsiclesnap.ogg" />
@@ -61,4 +66,9 @@
   <ItemGroup>
     <Folder Include="assets\ancienttools\patches\compatibility\dappledgroves\interactionremoval\" />
   </ItemGroup>
+  <Target Name="ZipFiles" AfterTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+    <MakeDir Directories="$(ReleasesDir)" />
+    <Delete Files="$(ReleasePath)" />
+    <ZipDirectory SourceDirectory="$(OutputPath)" DestinationFile="$(ReleasePath)" />
+  </Target>
 </Project>

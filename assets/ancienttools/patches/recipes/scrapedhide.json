@@ -4,7 +4,7 @@
 		"op": "add",
 		"path": "/0/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCrafting", "isValue": "true" }
 	},
@@ -12,7 +12,7 @@
 		"op": "add",
 		"path": "/0/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCraftingRecipeOnly", "isValue": "true" }
 	},
@@ -20,7 +20,7 @@
 		"op": "add",
 		"path": "/1/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCrafting", "isValue": "true" }
 	},
@@ -28,7 +28,7 @@
 		"op": "add",
 		"path": "/1/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCraftingRecipeOnly", "isValue": "true" }
 	},
@@ -36,7 +36,7 @@
 		"op": "add",
 		"path": "/2/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCrafting", "isValue": "true" }
 	},
@@ -44,7 +44,7 @@
 		"op": "add",
 		"path": "/2/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCraftingRecipeOnly", "isValue": "true" }
 	},
@@ -52,7 +52,7 @@
 		"op": "add",
 		"path": "/3/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCrafting", "isValue": "true" }
 	},
@@ -60,7 +60,7 @@
 		"op": "add",
 		"path": "/3/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCraftingRecipeOnly", "isValue": "true" }
 	},
@@ -68,7 +68,7 @@
 		"op": "add",
 		"path": "/4/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCrafting", "isValue": "true" }
 	},
@@ -76,7 +76,7 @@
 		"op": "add",
 		"path": "/4/enabled",
 		"value": "false",
-		"file": "game:recipes/grid/scrapedhide",
+		"file": "game:recipes/grid/hide-scraped",
 		"side": "Server",
 		"condition": { "when": "DisableVanillaHideCraftingRecipeOnly", "isValue": "true" }
 	},

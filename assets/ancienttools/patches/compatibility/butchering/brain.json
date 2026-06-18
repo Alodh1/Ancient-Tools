@@ -1,0 +1,434 @@
+[
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadbear-\\*-black-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.45, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/bear",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadbear-\\*-brown-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.45, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/bear",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadbear-\\*-panda-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.45, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/bear",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadbear-\\*-polar-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.45, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/bear",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadbear-\\*-sun-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.45, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/bear",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadchicken-male-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/chicken",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadchicken-female-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/chicken",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deaddeer-male-adult-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/deer",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deaddeer-male-adultlarge-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/deer",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadfox-male-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/fox",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadfox-female-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/fox",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadgazelle-male-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/gazelle",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadgazelle-female-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/gazelle",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadgoat-male-adult-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/goat",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadgoat-male-adultlarge-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/goat",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadhare-male-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/hare",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadhare-female-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/hare",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadhyena-male-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/hyena",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadhyena-female-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/hyena",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadhyena-baby-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/hyena",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadmoose-male-moose-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/moose",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadmoose-baby-moose-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/moose",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-male-eurasian-normal-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-male-eurasian-elder-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-male-redriver-normal-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-male-warthog-normal-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-female-eurasian-normal-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-female-eurasian-elder-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-female-redriver-normal-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-female-warthog-normal-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadpig-baby-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/pig",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadraccoon-male-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/raccoon",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadraccoon-female-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/raccoon",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadsheep-male-bighorn-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/sheep",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadsheep-male-mouflon-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/sheep",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadsheep-female-bighorn-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/sheep",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadsheep-female-mouflon-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/sheep",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadsheep-baby-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/sheep",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadwolf-male-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/wolf",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadwolf-female-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/wolf",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadwolf-baby-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/wolf",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadgemsbok-male-1-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/lichen/gemsbok",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }, { "modid": "lichen" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadgemsbok-female-1-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/lichen/gemsbok",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }, { "modid": "lichen" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadgemsbok-baby-1-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/lichen/gemsbok",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }, { "modid": "lichen" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadwhitehart-male-1-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/lichen/whitehart",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }, { "modid": "lichen" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadaurochs-male-1-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/medievalexpansion/aurochs",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }, { "modid": "medievalexpansion" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadaurochs-female-1-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.35, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/medievalexpansion/aurochs",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }, { "modid": "medievalexpansion" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	},
+	{
+		"op": "add",
+		"path": "/attributesByType/@^deadaurochs-baby-1-\\*$/butcheringRewards/-",
+		"value": { "type": "item", "code": "ancienttools:brain", "quantity": { "avg": 0.25, "var": 0 } },
+		"file": "butchering:itemtypes/butchercreatures/medievalexpansion/aurochs",
+		"side": "Server",
+		"dependsOn": [{ "modid": "butchering" }, { "modid": "medievalexpansion" }],
+		"condition": { "when": "DisableBrainDrops", "isValue": "false" }
+	}
+]
